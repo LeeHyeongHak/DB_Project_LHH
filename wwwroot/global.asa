@@ -1,0 +1,23 @@
+<SCRIPT LANGUAGE=vbscript RUNAT=Server>
+Option Explicit
+
+Sub Application_OnStart
+	Dim dbConnect
+	
+	dbConnect = "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;User ID=asd;Initial Catalog=BabyDB;Data Source=WOONG\SQLEXPRESS"
+	Application("dbConnect") = dbConnect
+End Sub
+
+Sub Application_OnEnd
+
+End sub
+
+Sub Session_OnStart
+
+End Sub
+
+Sub Session_OnEnd
+
+End Sub
+
+</SCRIPT>
